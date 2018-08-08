@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ondrop="drop_handler(event)" ondragover="dragOver_handler(event);">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./desktop.css">
+        <script src="./desktop.js">
+        </script>
+        <h1>
+            <strong> [Desktop] </strong>
+        </h1>
+    </head>
+    <body id="body" >
+        <section class="desktop">
+        </section>
+        <script>
+        function dragOver_handler(e){
+            e.preventDefault();
+            e.dataTransfer.dropEffect = "move";
+        }
+        function drop_handler(e){
+     e.preventDefault();
+     var data = e.dataTransfer.getData("text");
+     e.target.appendChild(document.getElementById(data));
+   }
+            //for(var i = 0; i < icons.length; i++){
+            //}
+            let myDesktop = new Desktop(2, 1);
+        </script>
+    </body>
+</html>

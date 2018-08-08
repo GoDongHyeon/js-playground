@@ -1,0 +1,14 @@
+/* TODO: 자유롭게 바탕화면 시스템의 CSS를 만들어 보세요! */
+body{
+  margin:0;
+  padding:0;
+}
+
+#folder1{
+  position: absolute;
+  cursor: pointer;
+  cursor: hand;
+  width:50px;
+  left:0;
+  top:0;
+}

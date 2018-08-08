@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ondrop="drop_handler(event)" ondragover="dragOver_handler(event)">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./desktop.css">
+        <script src="./desktop.js">
+        </script>
+    </head>
+    <body id="body">
+        <section class="folder">
+        </section>
+        <script>
+        function dragOver_handler(e){
+            e.preventDefault();
+            e.dataTransfer.dropEffect = "move";
+        }
+        function drop_handler(e){
+     e.preventDefault();
+     var data = e.dataTransfer.getData("text");
+     e.target.appendChild(document.getElementById(data));
+   }
+        let rdfd = Math.floor((Math.random() * 3) + 1);
+        let rdic = Math.floor((Math.random() * 3) + 1);
+        let myFolder = new Folder(rdfd, rdic);
+        </script>
+        </body>
+</html>
