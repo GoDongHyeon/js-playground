@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var text1= document.getElementById("text");
+        var a = prompt("숫자를 입력해주세요.");
+        var j = 0;
+        var result = "";
+
+        for(var i = Number(a); i > j ; j++){
+            result = "";
+
+            for(var a = 0; a < i - j; a++){
+                result += " ";
+            }
+            for(var s = 0; s < ( j * 2 ) - 1; s++){
+                result += "*";
+            }
+            
+            console.log(result);
+        }
+
+    </script>
+
+    <p id="text">r</p>
+</body>
+</html>
